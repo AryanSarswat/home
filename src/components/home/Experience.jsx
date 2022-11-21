@@ -10,14 +10,21 @@ const Experience = ({ experiences }) => {
   return (
     <section className="section">
       <Container>
-        <Jumbotron className="bg-white">
+        <Jumbotron fluid id="experience" className="bg-white">
           <h2 className="display-4 mb-5 text-center">
             {experiences.heading}
           </h2>
           <Row>
             {
               experiences.data.map((data, index) => {
-                return <ExperienceCard key={index} data={data} />
+                return <ExperienceCard 
+                    key = {index}
+                    companyLogo = {data.companyLogo}
+                    companyName = {data.companyName}
+                    duration = {data.duration}
+                    role = {data.role}
+                    description = {data.description}
+                />
               })
             }
           </Row>

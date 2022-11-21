@@ -3,6 +3,11 @@
   "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
   "homepage": "http://AryanSarswat.github.io",
   "version": "2.0.0",
+  "author": {
+    "name": "Aryan Sarswat",
+    "email": "aryansarswat2000@gmail.com",
+    "url": "https://github.com/AryanSarswat/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",

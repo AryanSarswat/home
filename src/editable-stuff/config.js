@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Aryan",
   middleName: "",
   lastName: "Sarswat",
-  message: " Passionate about changing the world with technology. ",
+  message: " Automating the World with Technology ",
   icons: [
     {
       image: "fa-github",
@@ -45,16 +45,44 @@ const about = {
   heading: "About Me",
   imageLink: require("../editable-stuff/aryan.png"),
   imageSize: 375,
-  message:
-    "My name is Aryan Sarswat. I’m presently studying Computer Science from the National University of Singapore. I'm extremely passionate about automating everything around me! I am currently interested in Machine Learning, particularly in the limitless potential of Computer Vision. In my free time I like working creating AI bots for board games and playing Chess!",
+  message: "My name is Aryan Sarswat. I’m presently studying Computer Science from the National University of Singapore. I'm extremely passionate about automating everything around me! I am currently interested in Machine Learning, particularly in the limitless potential of Computer Vision. In my free time I like working creating AI bots for board games and playing Chess! I used to be a Mechanical Engineering major but after taking some Machine Learning courses and building my own Object detector I transferred to Computer Science and never looked back!",
   resume: require("../editable-stuff/Aryan_Sarswat_2022_Resume.pdf"),
 };
+
+const experiences = {
+  show: true,
+  heading: "Experiences",
+  data: [
+    {
+      role: 'Final Year Project',// Here Add Company Name
+      companyLogo: require('../assets/img/a-star.png'),
+      companyName: "Agency For Science, Technology And Research (A*STAR)",
+      date: 'August 2022 – Present',
+      description: "Currently doing research to improve the generalization of deep learning models for deep-fake detection.",
+    },
+    {
+      role: 'Teaching Assistant',
+      companyLogo: require('../assets/img/nus.png'),
+      companyName: "National University of Singapore CS3244 (Machine Learning)",
+      date: 'August 2022 – December 2022',
+      description: "Teaching Assistant for CS3244 (Machine Learning) at the National University of Singapore. Was responsible for setting and grading assignments, exams and final projects. Taught a class of 15 students on various concepts in Machine Learning. Mentored 3 project groups on their final projects."
+    },
+    {
+      role: 'Technology Intern',
+      companyLogo: require('../assets/img/mci.jpg'),
+      companyName: "Ministry of Communications and Information (MCI)",
+      date: 'May 2022 – August 2022',
+      description: "Created a website which uses blockchain to prove the authenticity of a document. The website was built using ReactJS and the backend was built using Python."
+    },
+  ]
+}
 
 // PROJECTS SECTION
 // Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
 //      i.e: reposLength: 0,
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
+
 const repos = {
   show: true,
   heading: "Recent Projects",
@@ -92,24 +120,24 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
+    { name: "Python", value: 95 },
+    { name: "Java", value: 85 },
+    { name: "C/C++", value: 85 },
     { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
+    { name: "LaTex", value: 80 },
+    { name: "Deep Learning", value: 90 },
+    { name: "JavaScript", value: 75 },
     { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+    { name: "Problem Solving", value: 90 },
+    { name: "Collaboration", value: 70 },
+    { name: "Time Management", value: 90 },
+    { name: "Leadership", value: 70 },
+    { name: "Adaptability", value: 80 },
+    { name: "Initiative", value: 85 },
+    { name: "Organization", value: 80 },
+    { name: "Creativity", value: 60 },
   ],
 };
 
@@ -118,26 +146,11 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+    "I'm currently applying for Graduate School and looking for any Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
   email: "aryansarswat2000@gmail.com",
 };
 
-const experiences = {
-  show: false,
-  heading: "Experiences",
-  data: [
-    {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
-    },
-    {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
-    },
-  ]
-}
+
 
 // Blog SECTION
 // const blog = {

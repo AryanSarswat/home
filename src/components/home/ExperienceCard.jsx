@@ -1,23 +1,28 @@
 import React from 'react';
 
-import {
+import { 
   Col,
+  Card,
+  ListGroup,
+  ListGroupItem
 } from "react-bootstrap";
 
-const ExperienceCard = ({ data }) => {
-  return (
+const ExperienceCard = ({companyLogo, companyName, duration, role, description}) => {
+  return ( 
     <Col lg="6">
-      <div className="pb-5 text-center">
-        <img className=" bg-white mb-3" src={data.companylogo} alt="" />
-        <p className="lead">
-          {data.role}
-          <br />
-          {data.date}
-        </p>
-
-      </div>
+        <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+            <Card.Img variant="top" src={companyLogo}/>
+            <Card.Body>
+                <Card.Title>{companyName}</Card.Title>
+                <Card.Subtitle>{role}</Card.Subtitle>
+                <Card.Text>{duration}</Card.Text>
+            </Card.Body>
+            <ListGroup className='list-group-flush'>
+                <ListGroupItem>{description}</ListGroupItem>
+            </ListGroup>
+        </Card>
     </Col>
-  );
+ );
 }
 
 export default ExperienceCard;
